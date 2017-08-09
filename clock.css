@@ -1,0 +1,36 @@
+body{
+    margin: -8px;
+}
+.container{
+    background-image: url("clockbg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.clockFace{
+    border: 10px solid #fff;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.clock-hand{
+    background-color: aquamarine;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    transform-origin: 100%;
+    transition: all 0.05s;
+    transform: rotate(90deg);
+    transition-timing-function: cubic-bezier(0.11, 2.19, 0.58, 1);
+}
